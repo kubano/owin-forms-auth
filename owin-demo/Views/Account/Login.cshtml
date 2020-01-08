@@ -1,0 +1,23 @@
+﻿@model owin_demo.Controllers.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+<form action="@Url.Action("Login", "Account")" method="post">
+    <div class="form-group">
+        @Html.LabelFor(m => m.EmailAddress, null, new { @class = "" })
+        @Html.TextBoxFor(m => m.EmailAddress, null, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password, null, new { @class = "" })
+        @Html.TextBoxFor(m => m.Password, null, new { @class = "form-control", type = "password" })
+    </div>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

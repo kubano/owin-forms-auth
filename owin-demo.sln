@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "owin-demo", "owin-demo\owin-demo.csproj", "{193598D0-7D84-475F-B8F3-CBD22C2DD910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{193598D0-7D84-475F-B8F3-CBD22C2DD910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193598D0-7D84-475F-B8F3-CBD22C2DD910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193598D0-7D84-475F-B8F3-CBD22C2DD910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193598D0-7D84-475F-B8F3-CBD22C2DD910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61CDCB15-98EF-40A0-8A83-D557F4D8582A}
+	EndGlobalSection
+EndGlobal

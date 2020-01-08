@@ -1,0 +1,31 @@
+﻿@using System.Security.Claims;
+
+@model IEnumerable<Claim>
+
+@{
+    ViewBag.Title = "Index";
+
+    var user = (System.Security.Claims.ClaimsIdentity)User.Identity;
+}
+
+<h2>Index: Welcome Back: @User.Identity.Name : @User.IsInRole("Admin")</h2>
+
+    Is Authenticated!
+
+@if (User.IsInRole("Admin"))
+{
+    <h1>Is Admin</h1>
+}
+else
+{
+    <h1>Is User</h1>
+}
+<hr />
+@foreach (var item in Model)
+{
+    <p>@item.Type: @item.Value</p>
+}
+
+<a href="/Account/Logoff" class="btn btn-primary">
+    Logoff
+</a>
